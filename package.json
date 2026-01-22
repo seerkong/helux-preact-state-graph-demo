@@ -1,0 +1,29 @@
+{
+  "name": "helux-preact-starter",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [],
+  "license": "MIT",
+  "main": "src/index.tsx",
+  "scripts": {
+    "start": "if-env NODE_ENV=production && npm run -s serve || npm run -s dev",
+    "build": "preact build",
+    "serve": "sirv build --port 8080 --cors --single",
+    "dev": "preact watch"
+  },
+  "dependencies": {
+    "@helux/core": "^4.3.6",
+    "htm": "^3.1.1",
+    "lit": "^3.1.4",
+    "preact": "^10.22.1",
+    "preact-iso": "^2.6.3",
+    "rsuite": "^5.68.0",
+    "rsuite-table": "^5.18.3"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.9.0",
+    "less": "^4.2.0",
+    "typescript": "^5.5.4",
+    "vite": "^5.3.3"
+  }
+}
